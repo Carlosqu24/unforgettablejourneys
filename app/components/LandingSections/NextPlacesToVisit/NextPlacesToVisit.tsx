@@ -3,7 +3,7 @@ import React from 'react'
 const NextPlacesToVisit = () => {
   return (
     <section>
-        <h1 className="font-bold text-[36px]">Next cities to visit</h1>
+        <h1 className="font-bold text-[36px] mb-2">Next cities to visit</h1>
         <ul className="grid grid-cols-2">
           <li>Richmond, Virginia, USA 🇺🇸</li>
           <li>Memphis, Tenessee, USA 🇺🇸</li>
