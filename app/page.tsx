@@ -7,7 +7,9 @@ export default function Home() {
     <>
       <Banner />
       <NextPlacesToVisit />
-      <h2 className="text-center mt-28">Made with ❤️ by Carlos Quesada</h2>
+      <span 
+        className="block text-center mt-28"
+      >Made by <a href="https://twitter.com/WebdevQuesada" className="text-[#FFA500] underline">Carlos Quesada</a></span>
     </>
   );
 }

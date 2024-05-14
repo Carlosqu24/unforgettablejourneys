@@ -9,14 +9,14 @@ const Banner = () => {
 
         <div className="mt-8">
           <Link 
-            className="mr-6 p-2 bg-[#e4db87] text-[#000] font-bold rounded-[6px] cursor-pointer"
+            className="mr-6 p-2 bg-[#FFA500] text-[#000] font-bold rounded-[6px] cursor-pointer"
             href={"/"}
           >Explore Countries I've Visited</Link>
 
-        <Link 
-            className="mr-6 p-2 bg-[#d1da92] text-[#000] font-bold rounded-[6px] cursor-pointer"
+        {/* <Link 
+            className="mr-6 p-2 bg-[#3C6E47] text-[#000] font-bold rounded-[6px] cursor-pointer"
             href={"/"}
-          >Trace my travel routes</Link>
+          >Trace my travel routes</Link> */}
 
         </div>
       </section>
