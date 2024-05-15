@@ -8,7 +8,7 @@ export default function Home() {
       <Banner />
       <NextPlacesToVisit />
       <span 
-        className="block text-center mt-28"
+        className="block text-center mt-28 text-2xl"
       >Made by <a href="https://twitter.com/WebdevQuesada" className="text-[#FFA500] underline">Carlos Quesada</a></span>
     </>
   );

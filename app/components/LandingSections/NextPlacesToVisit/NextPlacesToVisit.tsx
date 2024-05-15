@@ -2,9 +2,9 @@ import React from 'react'
 
 const NextPlacesToVisit = () => {
   return (
-    <section>
-        <h1 className="font-bold text-[36px] mb-4">Next cities to visit</h1>
-        <ul className="grid grid-cols-3 gap-2">
+    <section className='mt-24'>
+        <h1 className="font-bold mb-4 text-5xl">Next cities to visit</h1>
+        <ul className="grid grid-cols-3 gap-2 text-2xl">
           <li>Richmond, Virginia, USA 🇺🇸</li>
           <li>Memphis, Tenessee, USA 🇺🇸</li>
           <li>Washinton Island, Wisconsin, USA 🇺🇸</li>
