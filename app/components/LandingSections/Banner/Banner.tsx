@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import ROUTES from '@/app/constants/routes'
 
 const Banner = () => {
   return (
@@ -10,7 +11,7 @@ const Banner = () => {
         <div className="mt-8">
           <Link 
             className="mr-6 p-2 bg-[#FFA500] text-[#000] font-bold rounded-[6px] cursor-pointer"
-            href={"/"}
+            href={ROUTES.COUNTRIES_I_HAVE_VISITED}
           >Explore Countries I've Visited</Link>
 
         {/* <Link 
