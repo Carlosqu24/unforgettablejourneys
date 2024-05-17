@@ -79,21 +79,25 @@ export default function Page() {
 
             <div
                 className="
-                    bg-[#00f] 
+                mt-2
+                mr-2
+                    bg-[#3a3a3a] 
                     text-[#fff] 
                     absolute 
                     top-0 
                     right-0 
                     z-20 
-                    w-[100px] 
-                    h-[100px] 
+                    w-[auto] 
+                    h-[auto] 
+                    p-2
+                    rounded-[10px]
                     flex 
                     justify-center 
                     items-center 
                     hover:cursor-pointer
                 "
                 onClick={() => router.push('/')}
-            >Return</div>
+            >{`<`}</div>
         </>
     )
 }
