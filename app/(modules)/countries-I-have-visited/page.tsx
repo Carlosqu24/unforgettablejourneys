@@ -61,15 +61,25 @@ export default function Page() {
                 "
             >
                 {
-                    countriesVisitedList.map((country) => (
+                    countriesVisitedList.map((country) => {
+                    
+                    const isSelected = selectedVisitedCountry.id === country.id
+                    
+                    const style = 
+                        isSelected 
+                            ? "bg-[#FFA500] text-[#000] font-bold" 
+                            : "bg-white text-[#2d2d2d]"
+
+                    return (
                         <div
                             key={country.id}
-                            className="py-4 px-12 mr-4 bg-white text-[#2d2d2d] rounded-[10px] hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold"
+                            className={`py-4 px-12 mr-4 ${style} rounded-[10px] hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold`}
                             onClick={() => handleSelectCountry(country.id)}
                         >
                             <h2>{country.name}</h2>
                         </div>
-                    ))
+                    )}
+                    )
                 }
             </div>
 
