@@ -44,43 +44,47 @@ export default function Page() {
         <>
             <h2>Countries I have visited</h2>
 
-            <div
-                className="
-                    p-4
-                    fixed 
+            <div className="w-[100vw] h-[auto] p-4
+                    absolute 
                     bg-[#3a3a3a]
                     bottom-0 
                     left-0
                     z-20 
-                    w-[200%] 
-                    h-[auto] 
+                    overflow-hidden
+                    ">
+                <div
+                    id="countries-visited-list"
+                    className="
+                        w-[200%]
+                        h-[auto]
+                        flex
+                        justify-start
+                        items-center    
+                        overflow-scroll
+                    "
+                >
+                    {
+                        countriesVisitedList.map((country) => {
+                        
+                        const isSelected = selectedVisitedCountry.id === country.id
+                        
+                        const style = 
+                            isSelected 
+                                ? "bg-[#FFA500] text-[#000] font-bold" 
+                                : "bg-white text-[#2d2d2d]"
 
-                    flex
-                    justify-start
-                    items-center
-                "
-            >
-                {
-                    countriesVisitedList.map((country) => {
-                    
-                    const isSelected = selectedVisitedCountry.id === country.id
-                    
-                    const style = 
-                        isSelected 
-                            ? "bg-[#FFA500] text-[#000] font-bold" 
-                            : "bg-white text-[#2d2d2d]"
-
-                    return (
-                        <div
-                            key={country.id}
-                            className={`py-4 px-12 mr-4 ${style} rounded-[10px] hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold`}
-                            onClick={() => handleSelectCountry(country.id)}
-                        >
-                            <h2>{country.name}</h2>
-                        </div>
-                    )}
-                    )
-                }
+                        return (
+                            <div
+                                key={country.id}
+                                className={`py-4 px-12 mr-4 ${style} rounded-[10px] hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold`}
+                                onClick={() => handleSelectCountry(country.id)}
+                            >
+                                <h2>{country.name}</h2>
+                            </div>
+                        )}
+                        )
+                    }
+                </div>
             </div>
 
             <div className="absolute top-0 left-0 bg-white-700 w-[100%] h-[100vh] z-10">
