@@ -11,6 +11,13 @@ import {
     countriesVisitedList
 } from "./data/countries";
 
+
+function Loader() {
+    return <div className="absolute z-80 top-0 left-0 w-[100%] h-[100%] bg-[#3a3a3a] m-auto">
+        <p className="text-[65px]">Map loading...</p>
+    </div>
+}
+
 export default function Page() {
 
     const [selectedVisitedCountry, setSelectedVisitedCountry] = useState<Country>(SELECTED_VISITED_COUNTRY_INITIAL_STATE)
@@ -18,7 +25,7 @@ export default function Page() {
     const Map = useMemo(() => dynamic(
         () => import('../../components/Map/Map'),
         {
-            loading: () => <p>A map is loading</p>,
+            loading: () => <Loader />,
             ssr: false
         }
     ), [selectedVisitedCountry.posix])
@@ -51,8 +58,6 @@ export default function Page() {
                     flex
                     justify-start
                     items-center
-                    
-                    overflow-x-scroll
                 "
             >
                 {
