@@ -44,20 +44,29 @@ export default function Page() {
         <>
             <h2>Countries I have visited</h2>
 
-            <div
+            <div 
                 className="
+                    w-[100vw] 
+                    h-[auto] 
                     p-4
-                    fixed 
+                    absolute 
                     bg-[#3a3a3a]
                     bottom-0 
                     left-0
                     z-20 
-                    w-[200%] 
+                    overflow-hidden
+                ">
+            <div
+                id="countries-visited-list"
+                className="
+                    w-[200%]
                     h-[auto] 
 
                     flex
                     justify-start
-                    items-center
+                    items-center    
+
+                    overflow-x-scroll
                 "
             >
                 {
@@ -81,6 +90,7 @@ export default function Page() {
                     )}
                     )
                 }
+            </div>
             </div>
 
             <div className="absolute top-0 left-0 bg-white-700 w-[100%] h-[100vh] z-10">
