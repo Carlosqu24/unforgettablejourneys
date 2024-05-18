@@ -6,20 +6,20 @@ export interface Country {
 
 export const countriesVisitedList: Country[] = [{
     id: 1,
-    name: "Colombia 🇨🇴",
-    posix: [4.79029, -75.69003]
+    name: "Costa Rica 🇨🇷",
+    posix: [9.63, -84.25]
 }, {
     id: 2,
-    name: "Panama 🇵🇦",
-    posix: [8.98238, -79.51987]
+    name: "United States 🇺🇸",
+    posix: [44.50, -89.50]
 }, {
     id: 3,
-    name: "Guatemala 🇬🇹",
-    posix: [14.63491, -90.50688]
+    name: "Panama 🇵🇦",
+    posix: [8.53, -80.78]
 }]
 
 export const SELECTED_VISITED_COUNTRY_INITIAL_STATE: Country = {
     id: 1,
-    name: "Colombia",
-    posix: [4.79029, -75.69003]
+    name: "Costa Rica 🇨🇷",
+    posix: [9.63, -84.25]
 }
