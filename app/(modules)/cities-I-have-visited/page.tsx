@@ -13,8 +13,8 @@ import {
 
 
 function Loader() {
-    return <div className="absolute z-80 top-0 left-0 w-[100%] h-[100%] bg-[#3a3a3a] m-auto">
-        <p className="text-[65px]">Map loading...</p>
+    return <div className="absolute z-80 top-0 left-0 w-[100%] h-[100%] bg-[#3a3a3a] m-auto flex items-center justify-center">
+        <span className="loader text-[32px]"></span>
     </div>
 }
 
