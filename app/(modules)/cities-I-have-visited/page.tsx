@@ -13,8 +13,8 @@ import {
 
 
 function Loader() {
-    return <div className="absolute z-80 top-0 left-0 w-[100%] h-[100%] bg-[#3a3a3a] m-auto">
-        <p className="text-[65px]">Map loading...</p>
+    return <div className="absolute z-80 top-0 left-0 w-[100%] h-[100%] bg-[#3a3a3a] m-auto flex items-center justify-center">
+        <span className="loader text-[32px]"></span>
     </div>
 }
 
@@ -59,10 +59,12 @@ export default function Page() {
             <div
                 id="countries-visited-list"
                 className="
-                    w-[200%]
+                    w-[auto]
                     h-[auto] 
+                    py-4
 
                     flex
+                    
                     justify-start
                     items-center    
 
@@ -82,7 +84,7 @@ export default function Page() {
                     return (
                         <div
                             key={country.id}
-                            className={`py-4 px-12 mr-4 ${style} rounded-[10px] hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold`}
+                            className={`py-4 px-12 mr-4 ${style} rounded-[10px] w-[auto] whitespace-nowrap break-normal hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold`}
                             onClick={() => handleSelectCountry(country.id)}
                         >
                             <h2>{country.name}</h2>
