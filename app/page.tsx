@@ -8,8 +8,8 @@ export default function Home() {
       <Banner />
       <NextPlacesToVisit />
       <span 
-        className="block text-center mt-28 text-2xl"
-      >Made by <a href="https://twitter.com/WebdevQuesada" className="text-[#FFA500] underline">Carlos Quesada</a></span>
+        className="block text-center mt-28"
+      >Made by <a href="https://www.linkedin.com/in/carlosquesada1/" className="text-[#FFA500] underline">Carlos Quesada</a></span>
     </>
   );
 }
