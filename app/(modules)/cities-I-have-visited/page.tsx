@@ -56,6 +56,7 @@ export default function Page() {
                     z-20 
                     overflow-hidden
                 ">
+                    <h2 className="font-bold text-[18px]">Countries list</h2>
             <div
                 id="countries-visited-list"
                 className="
@@ -84,7 +85,7 @@ export default function Page() {
                     return (
                         <div
                             key={country.id}
-                            className={`py-4 px-12 mr-4 ${style} rounded-[10px] w-[auto] whitespace-nowrap break-normal hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold`}
+                            className={`py-4 px-12 mr-4 ${style} rounded-[10px] text-[12px] w-[auto] whitespace-nowrap break-normal hover:cursor-pointer hover:bg-[#FFA500] hover:text-[#000] hover:font-bold`}
                             onClick={() => handleSelectCountry(country.id)}
                         >
                             <h2>{country.name}</h2>
